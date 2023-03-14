@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * create_array - create an array of chars
  * @size: unsigneg int

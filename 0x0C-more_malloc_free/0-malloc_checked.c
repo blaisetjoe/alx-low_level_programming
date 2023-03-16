@@ -1,7 +1,7 @@
 #include <main.h>
 
 /**
- * main - allocates memory using malloc
+ * malloc_checked - allocates memory using malloc
  * @b: unsigned int
  * Return: void pointer
  */
@@ -11,7 +11,7 @@ void *malloc_checked(unsigned int b)
 
 	ar = malloc(b);
 
-	if (ar ==NULL)
+	if (ar == NULL)
 	{
 		free(ar);
 		exit(98);

@@ -8,7 +8,7 @@
  * @n: numbers of intengers passed in
  * @...: varible numbers to be printed
  */
-void print_numbers(condt char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list nums;
 	unsigned int index;
@@ -17,7 +17,7 @@ void print_numbers(condt char *separator, const unsigned int n, ...)
 
 	for (index = 0; index < n; index++)
 	{
-		printf("%d", va_arg(num, int));
+		printf("%d", va_arg(nums, int));
 
 		if (index != (n - 1) && separator != NULL)
 			printf("%s", separator);
